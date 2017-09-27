@@ -1,3 +1,5 @@
+# Attribute accessors are setters and getters. We can then call them with '.'
+
 class ApiConnector
   attr_accessor :title, :description, :url # Set up getters and setters
 

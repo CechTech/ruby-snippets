@@ -19,8 +19,16 @@ class ApiConnector
   end
 end
 
-api = ApiConnector.new(title: 'My Title',
-                       description: 'Cool description',
-                       url: 'yahoo.com')
+# SMS inherits from API
+class SmsConnector < ApiConnector
+  def send_sms
+    puts 'Sending sms...'
+  end
+end
 
-api.testing_initializers
+sms = SmsConnector.new(title: 'My Title',
+                       description: "My cool description",
+                       url: 'yahoo.com')
+# Both methods are available for inherited class
+sms.send_sms
+sms.testing_initializers
