@@ -27,7 +27,6 @@ class PhoneConnector < ApiConnector
 end
 
 phone = PhoneConnector.new(title: 'My Title',
-                       description: 'My cool description',
-                       url: 'http://edutechional-smsy.herokuapp.com/notifications')
+                           description: 'My cool description',
+                           url: 'http://edutechional-smsy.herokuapp.com/notifications')
 phone.api_logger
-
