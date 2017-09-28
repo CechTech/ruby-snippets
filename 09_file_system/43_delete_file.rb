@@ -1,0 +1,1 @@
+File.delete('09_file_system/example_files/file_for_delete.rb')
